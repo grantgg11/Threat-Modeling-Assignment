@@ -700,6 +700,94 @@
                 "y": 330
               }
             ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              {
+                "attrs": {
+                  "label": {
+                    "text": "Trust Boundary"
+                  }
+                }
+              }
+            ],
+            "id": "9a7067be-5242-4c22-b60e-75b41f657010",
+            "source": {
+              "x": 490,
+              "y": 360
+            },
+            "target": {
+              "x": 750,
+              "y": 130
+            },
+            "vertices": [
+              {
+                "x": 600,
+                "y": 305
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Request",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Request"
+            ],
+            "id": "50ff0610-748b-4dce-936f-3db9381f398a",
+            "source": {
+              "x": 1136,
+              "y": 210
+            },
+            "target": {
+              "cell": "daca390c-cd8e-4edd-ac20-114bc77acc72",
+              "port": "0912614d-3f5b-4b49-b07b-401c64e56648"
+            },
+            "vertices": [
+              {
+                "x": 1040,
+                "y": 240
+              }
+            ]
           }
         ]
       }
