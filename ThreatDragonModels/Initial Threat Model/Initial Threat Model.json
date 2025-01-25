@@ -671,19 +671,13 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Trust Boundary",
-              "description": "",
+              "name": "Internal System\nTrust Boundary",
+              "description": "Based on security measure like Principle of Least Privilege, there needs to be a separation internally based on what privilege people have. ",
               "isTrustBoundary": true,
               "hasOpenThreats": false
             },
             "labels": [
-              {
-                "attrs": {
-                  "label": {
-                    "text": "Trust Boundary"
-                  }
-                }
-              }
+              "Internal System\nTrust Boundary"
             ],
             "id": "9a7067be-5242-4c22-b60e-75b41f657010",
             "source": {
@@ -698,6 +692,10 @@
               {
                 "x": 590,
                 "y": 360
+              },
+              {
+                "x": 660,
+                "y": 310
               },
               {
                 "x": 680,
