@@ -634,7 +634,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Message-of-\nthe-day",
-              "description": "",
+              "description": "Messages presented to user once they are authenticated and have access to the application",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -734,8 +734,62 @@
             },
             "vertices": [
               {
-                "x": 600,
-                "y": 305
+                "x": 590,
+                "y": 360
+              },
+              {
+                "x": 680,
+                "y": 280
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Response",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Response"
+            ],
+            "id": "5955d283-12c2-453c-8c4b-9ff5a7513dac",
+            "source": {
+              "x": 875,
+              "y": 197
+            },
+            "target": {
+              "cell": "8723311e-bb31-4a49-8cba-3e3045a77b50",
+              "port": "93de7915-2239-4974-b886-9b8da73cc3a2"
+            },
+            "vertices": [
+              {
+                "x": 1020,
+                "y": 197
               }
             ]
           },
@@ -773,10 +827,10 @@
             "labels": [
               "Request"
             ],
-            "id": "50ff0610-748b-4dce-936f-3db9381f398a",
+            "id": "fcd0e013-65ff-461c-be56-6d68a4fe776e",
             "source": {
               "x": 1136,
-              "y": 210
+              "y": 235
             },
             "target": {
               "cell": "daca390c-cd8e-4edd-ac20-114bc77acc72",
@@ -784,10 +838,54 @@
             },
             "vertices": [
               {
-                "x": 1040,
-                "y": 240
+                "x": 1000,
+                "y": 235
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Comments",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Comments"
+            ],
+            "id": "011b7262-4ee9-4681-aaae-a8ba52bf18ff",
+            "source": {
+              "x": 730,
+              "y": 235
+            },
+            "target": {
+              "cell": "aff27381-c3a9-4362-b8e1-06e573ac8e2c",
+              "port": "af04ac9c-1d0f-428a-9ba8-49ce48bbf5f1"
+            }
           }
         ]
       }
