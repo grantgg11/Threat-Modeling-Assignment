@@ -999,28 +999,22 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Trust Boundary",
-              "description": "",
+              "name": "Third-Party \nTrust Boundary",
+              "description": "Since the authentication is open-source and not in control by the system, there is a boundary from potential vulnerabilities. ",
               "isTrustBoundary": true,
               "hasOpenThreats": false
             },
             "labels": [
-              {
-                "attrs": {
-                  "label": {
-                    "text": "Trust Boundary"
-                  }
-                }
-              }
+              "Third-Party \nTrust Boundary"
             ],
             "id": "0074ef36-7041-4530-a984-dd5caeb67854",
             "source": {
-              "x": 719,
-              "y": 465
+              "x": 800,
+              "y": 500
             },
             "target": {
-              "x": 819,
-              "y": 565
+              "x": 1130,
+              "y": 340
             }
           }
         ]
