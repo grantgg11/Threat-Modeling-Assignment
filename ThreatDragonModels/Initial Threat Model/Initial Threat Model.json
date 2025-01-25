@@ -764,7 +764,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Response",
-              "description": "",
+              "description": "Response to users with the outcome of their login attempt",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -814,7 +814,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Request",
-              "description": "",
+              "description": "Requests to have their login credentials authenticated and to access the application",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -864,7 +864,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Comments",
-              "description": "",
+              "description": "Comments from the users about the message of the day to be stored",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -885,7 +885,117 @@
             "target": {
               "cell": "aff27381-c3a9-4362-b8e1-06e573ac8e2c",
               "port": "af04ac9c-1d0f-428a-9ba8-49ce48bbf5f1"
-            }
+            },
+            "vertices": [
+              {
+                "x": 630,
+                "y": 260
+              },
+              {
+                "x": 580,
+                "y": 260
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "User\nCredentials",
+              "description": "The application sends the user's credentials to be authenticated",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "User\nCredentials"
+            ],
+            "id": "e46c3d61-e36e-42e5-a9de-ad18d5178237",
+            "source": {
+              "x": 875,
+              "y": 285
+            },
+            "target": {
+              "cell": "650825a1-b0e8-4cf3-93e1-e1000575bf64",
+              "port": "6fa97683-5c28-4a40-88b3-961f33f1236d"
+            },
+            "vertices": [
+              {
+                "x": 990,
+                "y": 340
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Credentials\nValidation",
+              "description": "Sends the results of the authentication process.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Credentials\nValidation"
+            ],
+            "id": "364b4e72-798f-48f7-922b-d15c97237bee",
+            "source": {
+              "x": 975,
+              "y": 475
+            },
+            "target": {
+              "cell": "daca390c-cd8e-4edd-ac20-114bc77acc72",
+              "port": "a52eba05-72cf-478b-9f0c-5d2596d9a7c3"
+            },
+            "vertices": [
+              {
+                "x": 840,
+                "y": 430
+              }
+            ]
           }
         ]
       }
