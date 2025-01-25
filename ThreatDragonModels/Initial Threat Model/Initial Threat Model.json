@@ -685,44 +685,6 @@
                 }
               }
             ],
-            "id": "7642faf1-5ebf-4b85-8ff4-b9d8d47d18c6",
-            "source": {
-              "x": 670,
-              "y": 390
-            },
-            "target": {
-              "x": 1010,
-              "y": 150
-            },
-            "vertices": [
-              {
-                "x": 890,
-                "y": 330
-              }
-            ]
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Trust Boundary",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "labels": [
-              {
-                "attrs": {
-                  "label": {
-                    "text": "Trust Boundary"
-                  }
-                }
-              }
-            ],
             "id": "9a7067be-5242-4c22-b60e-75b41f657010",
             "source": {
               "x": 490,
@@ -968,7 +930,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Credentials\nValidation",
-              "description": "Sends the results of the authentication process.",
+              "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -996,6 +958,70 @@
                 "y": 430
               }
             ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "External User Trust\nBoundary",
+              "description": "This is aimed to separate untrusted external user environment from the application's trusted environment. ",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "External User Trust\nBoundary"
+            ],
+            "id": "a4fb65fc-7198-45d6-9ed8-b4375a00d703",
+            "source": {
+              "x": 875,
+              "y": 128
+            },
+            "target": {
+              "x": 900,
+              "y": 290
+            },
+            "vertices": [
+              {
+                "x": 950,
+                "y": 128
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              {
+                "attrs": {
+                  "label": {
+                    "text": "Trust Boundary"
+                  }
+                }
+              }
+            ],
+            "id": "0074ef36-7041-4530-a984-dd5caeb67854",
+            "source": {
+              "x": 719,
+              "y": 465
+            },
+            "target": {
+              "x": 819,
+              "y": 565
+            }
           }
         ]
       }
