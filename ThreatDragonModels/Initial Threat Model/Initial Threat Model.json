@@ -28,7 +28,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Application User"
+                "text": "User"
               },
               "body": {
                 "stroke": "#333333",
@@ -124,7 +124,7 @@
             "zIndex": 1,
             "data": {
               "type": "tm.Actor",
-              "name": "Application User",
+              "name": "User",
               "description": "The user that will interact with the application. ",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -373,7 +373,7 @@
           },
           {
             "position": {
-              "x": 290,
+              "x": 420,
               "y": 210
             },
             "size": {
@@ -382,7 +382,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Database"
+                "text": "App Database"
               },
               "topLine": {
                 "strokeWidth": 1.5,
@@ -481,7 +481,7 @@
             "zIndex": 4,
             "data": {
               "type": "tm.Store",
-              "name": "Database",
+              "name": "App Database",
               "description": "This database stores the user's credentials, message-of-the-day, and user's comments",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -496,8 +496,8 @@
           },
           {
             "position": {
-              "x": 700,
-              "y": 410
+              "x": 970,
+              "y": 430
             },
             "size": {
               "width": 130,
@@ -611,14 +611,95 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Message-of-\nthe-day",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Message-of-\nthe-day"
+            ],
+            "id": "d43fc2b6-87cf-402c-b521-5b31cd2392fd",
+            "source": {
+              "x": 550,
+              "y": 210
+            },
+            "target": {
+              "x": 740,
+              "y": 190
+            },
+            "vertices": [
+              {
+                "x": 650,
+                "y": 210
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              {
+                "attrs": {
+                  "label": {
+                    "text": "Trust Boundary"
+                  }
+                }
+              }
+            ],
+            "id": "7642faf1-5ebf-4b85-8ff4-b9d8d47d18c6",
+            "source": {
+              "x": 670,
+              "y": 390
+            },
+            "target": {
+              "x": 1010,
+              "y": 150
+            },
+            "vertices": [
+              {
+                "x": 890,
+                "y": 330
+              }
+            ]
           }
         ]
       }
