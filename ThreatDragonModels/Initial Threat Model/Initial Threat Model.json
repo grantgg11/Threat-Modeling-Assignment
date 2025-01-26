@@ -546,14 +546,34 @@
                   "new": false,
                   "number": 5,
                   "score": ""
+                },
+                {
+                  "id": "e8c89b0f-e10b-479c-829b-247f2bf8ca37",
+                  "title": "SQL Injection",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Tampering",
+                  "description": "An attacker can interfere with queries to the database. This will allow them to manipulate the database by either altering or deleting data. There are able to bypass authentication and extract unauthorized information. An attacker could modify the query to retrieve the message-of-the-day to display a different message or inject harmful data into user comments. This would ruin the integrity of the database and lead to damages. ",
+                  "mitigation": "Implement parameterized queries, proper access controls and input validation, and perform security testing. ",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
-                "tampering": 0,
+                "tampering": 1,
                 "repudiation": 0,
                 "informationDisclosure": 1,
                 "denialOfService": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1121,6 +1141,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "test",
-    "threatTop": 6
+    "threatTop": 7
   }
 }
