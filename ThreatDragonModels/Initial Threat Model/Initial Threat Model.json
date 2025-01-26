@@ -1062,38 +1062,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "External User Trust\nBoundary",
-              "description": "This is aimed to separate untrusted external user environment from the application's trusted environment. ",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "labels": [
-              "External User Trust\nBoundary"
-            ],
-            "id": "a4fb65fc-7198-45d6-9ed8-b4375a00d703",
-            "source": {
-              "x": 875,
-              "y": 128
-            },
-            "target": {
-              "x": 900,
-              "y": 290
-            },
-            "vertices": [
-              {
-                "x": 950,
-                "y": 128
-              }
-            ]
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
               "name": "Third-Party \nTrust Boundary",
               "description": "Since the authentication is open-source and not in control by the system, there is a boundary from potential vulnerabilities. ",
               "isTrustBoundary": true,
@@ -1111,6 +1079,42 @@
               "x": 1130,
               "y": 340
             }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "External User Trust\nBoundary",
+              "description": "This is aimed to separate untrusted external user environment from the application's trusted environment. ",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "External User Trust\nBoundary"
+            ],
+            "id": "a4fb65fc-7198-45d6-9ed8-b4375a00d703",
+            "source": {
+              "x": 830,
+              "y": 160
+            },
+            "target": {
+              "x": 900,
+              "y": 290
+            },
+            "vertices": [
+              {
+                "x": 850,
+                "y": 150
+              },
+              {
+                "x": 950,
+                "y": 150
+              }
+            ]
           }
         ]
       }
