@@ -31,13 +31,14 @@
                 "text": "User"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,16 +122,33 @@
               ]
             },
             "id": "8723311e-bb31-4a49-8cba-3e3045a77b50",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "User",
               "description": "The user that will interact with the application. ",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "81cebfc2-8a17-4a8f-add5-f5d29c868c67",
+                  "title": "Phishing Attack ",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Spoofing",
+                  "description": "As attacker can create a fake login page to retrieve credible user credentials. This can be done by creating a fake link and sending it to potential victims so that they will enter in their login credentials to be recorded by the attackers. This will lead to unauthorized access. ",
+                  "mitigation": "Implement two factor authentication and educate users how to spot these attacks. ",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -154,6 +172,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -237,7 +256,6 @@
               ]
             },
             "id": "daca390c-cd8e-4edd-ac20-114bc77acc72",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "",
@@ -273,6 +291,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -356,7 +375,6 @@
               ]
             },
             "id": "6f2b7346-55fd-486f-bcbe-c8fbe2c509cc",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Web Application",
@@ -395,6 +413,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -478,7 +497,6 @@
               ]
             },
             "id": "aff27381-c3a9-4362-b8e1-06e573ac8e2c",
-            "zIndex": 4,
             "data": {
               "type": "tm.Store",
               "name": "App Database",
@@ -515,6 +533,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -598,7 +617,6 @@
               ]
             },
             "id": "650825a1-b0e8-4cf3-93e1-e1000575bf64",
-            "zIndex": 5,
             "data": {
               "type": "tm.Process",
               "name": "Authentication \nComponent",
@@ -1020,6 +1038,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "test",
-    "threatTop": 0
+    "threatTop": 1
   }
 }
