@@ -526,8 +526,8 @@
                 "text": "Authentication \nComponent"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -623,12 +623,34 @@
               "description": "This is an open-source component to authenticate the user credentials based on data in the database. ",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "d0d63f07-6f0e-427b-bcf8-e226e6bdc96b",
+                  "title": "Open-Source Component Vulnerability ",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "If this authentication component contains a vulnerability, it could lead to user data being exposed. Since the open-source component is not under full control of the system, there can be a lack of security oversight. ",
+                  "mitigation": "Have a senior software security architect or third party review the open-source component, by conducting threat modeling and risk assessment. Implement secure API communication and monitor this component. ",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -1038,6 +1060,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "test",
-    "threatTop": 1
+    "threatTop": 2
   }
 }
