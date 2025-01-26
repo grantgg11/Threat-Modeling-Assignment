@@ -284,8 +284,8 @@
                 "text": "Web Application"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -381,12 +381,43 @@
               "description": "This includes the login, authentication, message of the day, and comment handling.",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "46578818-fa01-4c68-8c25-c4258edf8d49",
+                  "title": "Comment Manipulation",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Repudiation",
+                  "description": "A user could post a comment for the message-of-the-day and then later deny ever doing so. If the system does not have proper logging in place, then there is no evidence to deny the user's claim. This could lead to lack of accountability and potential misuse. ",
+                  "mitigation": "To mitigate this, there needs to be strong logging mechanisms with unique identifies for users. Furthermore, there should be regular audits of the logs to identify anomalies. ",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -532,13 +563,6 @@
                 "informationDisclosure": 1,
                 "denialOfService": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -1102,6 +1126,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "test",
-    "threatTop": 5
+    "threatTop": 6
   }
 }
