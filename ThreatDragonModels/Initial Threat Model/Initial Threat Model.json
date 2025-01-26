@@ -820,7 +820,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Message-of-\nthe-day Disaplay",
+              "name": "Message-of-\nthe-day Display",
               "description": "Response to users with the outcome of their login attempt",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -832,7 +832,7 @@
               "threats": []
             },
             "labels": [
-              "Message-of-\nthe-day Disaplay"
+              "Message-of-\nthe-day Display"
             ],
             "id": "5955d283-12c2-453c-8c4b-9ff5a7513dac",
             "source": {
