@@ -409,15 +409,6 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -829,7 +820,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Response",
+              "name": "Message-of-\nthe-day Disaplay",
               "description": "Response to users with the outcome of their login attempt",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -841,7 +832,7 @@
               "threats": []
             },
             "labels": [
-              "Response"
+              "Message-of-\nthe-day Disaplay"
             ],
             "id": "5955d283-12c2-453c-8c4b-9ff5a7513dac",
             "source": {
@@ -854,7 +845,7 @@
             },
             "vertices": [
               {
-                "x": 1020,
+                "x": 1070,
                 "y": 197
               }
             ]
@@ -879,7 +870,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Request",
+              "name": "Comment\nSubmission",
               "description": "Requests to have their login credentials authenticated and to access the application",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -891,7 +882,7 @@
               "threats": []
             },
             "labels": [
-              "Request"
+              "Comment\nSubmission"
             ],
             "id": "fcd0e013-65ff-461c-be56-6d68a4fe776e",
             "source": {
