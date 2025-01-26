@@ -403,11 +403,13 @@
                 "text": "App Database"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -503,13 +505,33 @@
               "description": "This database stores the user's credentials, message-of-the-day, and user's comments",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "98b6b432-ef7f-4aab-82e5-575809dcb184",
+                  "title": "Database Leak",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "The user sensitive data could be exposed by vulnerabilities in the database. This could lead to a breach of confidentiality and could create legal risks. ",
+                  "mitigation": "Implement encryption of all sensitive data at rest. Additionally, utilize strict access control. ",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             },
             "tools": {
               "items": [
@@ -1080,6 +1102,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "test",
-    "threatTop": 4
+    "threatTop": 5
   }
 }
