@@ -510,6 +510,13 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -641,6 +648,19 @@
                   "new": false,
                   "number": 2,
                   "score": ""
+                },
+                {
+                  "id": "6df25665-da94-499b-95b3-d502681c34a7",
+                  "title": "Flood Attacks",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Denial of service",
+                  "description": "An attacker can overwhelm the authentication system by botnets and staining the target's resources with high volume of login attempts. This can lead to the system to become unresponsive. ",
+                  "mitigation": "Implement rate limits and CAPTCHA for login attempts. Additionally, firewalls, redundancy, and anomaly detection.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
@@ -648,7 +668,7 @@
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 1,
-                "denialOfService": 0,
+                "denialOfService": 1,
                 "elevationOfPrivilege": 0
               }
             }
@@ -1060,6 +1080,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "test",
-    "threatTop": 2
+    "threatTop": 4
   }
 }
